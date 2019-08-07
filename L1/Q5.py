@@ -25,10 +25,10 @@ print("""
 """) # 1 for rock; 2 for paper; 3 for scissor
 
 # step1: get player's choice, save it in variable p_choice
-p_choice=int(input("Your choice:"))
+
 
 # step2: generate a random choice for minion, save it in variable m_choice
-m_choice=random.randint(1,4)
+
 
 
 
@@ -38,26 +38,7 @@ m_choice=random.randint(1,4)
 status = 0 # initialized as 0
 # step 3: given choices from player and minion, decide the game status
    
-if (p_choice == m_choice):
-    status=3
-elif(p_choice == 1):
-    if (m_choice == 2):
-        status =2
-    elif (m_choice == 3):
-        status = 1
-elif(p_choice == 2):
-    if (m_choice==1):
-        status = 1
-    elif(m_choice == 3):
-        status == 2
-elif(p_choice == 3):
-    if (m_choice ==1):
-        status= 2
-    elif (m_choice == 2):
-        status = 1
-else:
-    status = 4
-    
+
 
 
 
