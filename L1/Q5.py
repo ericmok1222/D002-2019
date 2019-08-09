@@ -23,7 +23,7 @@ print("""
 p_choice=int(input("Your choice:"))
 
 # step2: generate a random choice for minion, save it in variable m_choice
-m_choice=random.randint(1,4)
+m_choice=random.randint(1,3)
 
 
 
