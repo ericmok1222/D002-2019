@@ -12,8 +12,20 @@ print ("shhh, Dave hides %s bananas" % n)
 found = False
 count = 0
 #Step 4: Give three chances to the players 
-
-
+while count<=2:
+    guess=int(input("input a number between 1and 100"))
+    count+=1
+    if guess>100:
+        print("wrong input")
+    elif guess==n:
+        found=True
+        break
+    if guess<n:
+        print("you guess too low")
+    elif guess>n:
+        print("you guess too high")
+    
+            
 
 #Step 5: Display a message
 if found == True:
